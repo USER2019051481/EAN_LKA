@@ -10,11 +10,11 @@ In intrapartum ultrasound image segmentation, accurately segment the small targe
 
 ### EAN\_LKA:
 
-![fig2](![framework](imgs/fig2.png))
+![fig2](src="imgs/fig2.png")
 
 ## Performance Comparison
 
-![fig4](![framework](imgs/fig4.png))
+![fig4](src="imgs/fig4.png")
 
 
 ## Environment
