@@ -14,7 +14,7 @@ In intrapartum ultrasound image segmentation, accurately segment the small targe
 
 ## Performance Comparison
 
-<img src="imgs/performance.png" title="preformance" style="zoom:8%;" align="left"/>
+![image-20250524135420875](C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20250524135420875.png)
 
 
 ## Environment
