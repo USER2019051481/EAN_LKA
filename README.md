@@ -1,23 +1,14 @@
-# S2L-Vit: A Novel Approach to Improve Small Object Segmentation in Intrapartum Ultrasound
+# Edge Awareness Network with Large Kernel Attention for Small Target Segmentation from Intrapartum Ultrasound Images
 
-Official pytorch code for "S2L-Vit: A Novel Approach to Improve Small Object Segmentation in Intrapartum Ultrasound"
+Official pytorch code for "Edge Awareness Network with Large Kernel Attention for Small Target Segmentation from Intrapartum Ultrasound Images"
 
 - [x] Code release
 - [ ] Paper release
 
 ## Abstract
-This paper explores the S2L-Vit network for small object segmentation, incorporating a Large Kernel Attention (LKA) decoder 
-and Spatial Channel-Token Bridge (SCTB) skip connections into ShiftVit. The SCTB effectively models channel and spatial 
-interactions, allowing for precise localization of small targets, while the LKA decoder uses large kernel convolutions 
-for image resolution recovery, enhancing segmentation accuracy. The experimental results demonstrate the superiority of 
-this approach, with performance metrics indicating JS of 89.50%±0.47%, DicePS of 88.47%±0.73%, DiceFH of 94.97%±0.17%, 
-DiceAll of 94.94%±0.35%, ASDPS of 1.49±0.17, ASDFH of 2.13±0.09, and ASDAll of 1.95±0.08. These outcomes surpass other 
-state-of-the-art models, confirming S2L-Vit's advantage in obstetric ultrasound imaging for small object segmentation. 
-In generalization tests, S2L-Vit showed excellent performance across different datasets and scenarios, indicating its 
-potential for broader clinical application in obstetrics. Overall, the chapter establishes that S2L-Vit delivers significant 
-improvements in accuracy and maintains high performance stability.
+In intrapartum ultrasound image segmentation, accurately segment the small target, especially its boundary, is crucial for diagnosis in the emergency ward but still faces challenges. In this paper, we propose the Edge Aware Network with Large Kernel Attention, named EAN\_LKA, for intrapartum ultrasound image segmentation, especially for small but important target-pubic symphysis. Specifically, the architecture is composed of Shift Vision Transformer encoder, Large Kernel Attention decoder and Spatial Channel Cross Transform refinement module, which can respectively model the long-range dependence of tokens representing target boundary, allow the model to focus on relevant features of the small target across a wider spatial area of the input image and enable the network to effectively reinforce semantic differences between the target and clutter at full scales. Quantitative and qualitative experimental results on two MICCAI challenge datasets demonstrate that our proposed EAN\_LKA outperforms the other methods on the small target with an increase the average dice score (2.03%) and a decrease of the average surface distance (0.3). 
 
-### S2L-Vit:
+### EAN\_LKA:
 
 ![framework](imgs/S2L-Vit.png)
 
